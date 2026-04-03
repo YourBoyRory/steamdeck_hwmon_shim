@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 set -eu
 driver="amdgpu"
 fan_addr="fan1_input"
