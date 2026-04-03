@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 set -eu
-driver="amdgpu"
+driver="nct6798"
 fan_addr="fan1_input"
 
 path=$(dirname $(grep $driver /sys/class/hwmon/*/name | awk -F ":" '{print $1}'))
