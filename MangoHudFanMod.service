@@ -1,0 +1,12 @@
+[Unit]
+Description=MangoHud Fan RPM Mod
+Wants=multi-user.target
+After=multi-user.target systemd-modules-load.service sysfs.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/steamdeck_hwmon_shim/run.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
